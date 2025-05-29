@@ -1,118 +1,96 @@
-# Contributor Covenant Code of Conduct
+# Código de Conduta - Estúdio Virtual
 
-## Our Pledge
+## Nosso Compromisso
 
-We as members, contributors, and leaders pledge to make participation in our
-community a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics, gender
-identity and expression, level of experience, education, socio-economic status,
-nationality, personal appearance, race, religion, or sexual identity
-and orientation.
+Nós, como membros, jogadores, criadores e líderes da comunidade do Estúdio Virtual, nos comprometemos a fazer da participação em nossa comunidade uma experiência livre de assédio para todos, independentemente de idade, tamanho corporal, deficiência visível ou invisível, etnia, características sexuais, identidade e expressão de gênero, nível de experiência, educação, status socioeconômico, nacionalidade, aparência pessoal, raça, religião ou identidade e orientação sexual.
 
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+Prometemos agir e interagir de maneiras que contribuam para uma comunidade aberta, acolhedora, diversa, inclusiva e saudável, onde todos possam desfrutar da experiência de gerenciar seus estúdios virtuais em um ambiente respeitoso e divertido.
 
-## Our Standards
+## Nossos Padrões
 
-Examples of behavior that contributes to a positive environment for our
-community include:
+Exemplos de comportamentos que contribuem para um ambiente positivo em nossa comunidade incluem:
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
-  and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the
-  overall community
+* Demonstrar empatia e gentileza com outras pessoas
+* Ser respeitoso com opiniões, pontos de vista e experiências diferentes
+* Dar e aceitar graciosamente feedback construtivo sobre estratégias de jogo
+* Aceitar responsabilidade e se desculpar com aqueles afetados por nossos erros, aprendendo com a experiência
+* Focar no que é melhor não apenas para nós como indivíduos, mas para toda a comunidade de jogadores
+* Compartilhar conhecimento e ajudar novos jogadores a aprender o jogo
+* Celebrar as conquistas de outros jogadores de forma construtiva
 
-Examples of unacceptable behavior include:
+Exemplos de comportamentos inaceitáveis incluem:
 
-* The use of sexualized language or imagery, and sexual attention or
-  advances of any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email
-  address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+* O uso de linguagem ou imagens sexualizadas, e atenção ou avanços sexuais de qualquer tipo
+* Trolling, comentários insultuosos ou depreciativos, e ataques pessoais ou políticos
+* Assédio público ou privado
+* Publicar informações privadas de outras pessoas, como endereço físico ou de e-mail, sem sua permissão explícita
+* Outras condutas que poderiam ser razoavelmente consideradas inadequadas em um ambiente profissional e de entretenimento
 
-## Enforcement Responsibilities
+## Regras Específicas do Estúdio Virtual
+### Conteúdo e Nomenclatura
+#### É ESTRITAMENTE PROIBIDO:
+* Palavrões ou linguagem ofensiva em nomes de estúdios, personagens, projetos, roteiros ou qualquer outro elemento do jogo
+* Conteúdo sexual explícito em produções, descrições ou perfis
+* Referências a drogas ilegais ou atividades criminosas
+* Apologia a qualquer forma de discriminação, incluindo mas não limitado a:
+>* Racismo, xenofobia ou intolerância étnica
+>* Homofobia, transfobia ou qualquer forma de discriminação LGBTQIA+
+>* Sexismo ou misoginia
+>* Intolerância religiosa
+>* Capacitismo ou discriminação por deficiência
+>* Classismo ou discriminação socioeconômica
 
-Community leaders are responsible for clarifying and enforcing our standards of
-acceptable behavior and will take appropriate and fair corrective action in
-response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful.
+## Responsabilidades de Moderação
 
-Community leaders have the right and responsibility to remove, edit, or reject
-comments, commits, code, wiki edits, issues, and other contributions that are
-not aligned to this Code of Conduct, and will communicate reasons for moderation
-decisions when appropriate.
+Os líderes da comunidade são responsáveis por esclarecer e fazer cumprir nossos padrões de comportamento aceitável e tomarão ações corretivas apropriadas e justas em resposta a qualquer comportamento que considerem inadequado, ameaçador, ofensivo ou prejudicial.
 
-## Scope
+Os líderes da comunidade têm o direito e a responsabilidade de remover, editar ou rejeitar comentários, commits, código, edições de wiki, issues, produções do jogo e outras contribuições que não estejam alinhadas a este Código de Conduta, e comunicarão os motivos das decisões de moderação quando apropriado.
 
-This Code of Conduct applies within all community spaces, and also applies when
-an individual is officially representing the community in public spaces.
-Examples of representing our community include using an official e-mail address,
-posting via an official social media account, or acting as an appointed
-representative at an online or offline event.
+## Escopo
 
-## Enforcement
+Este Código de Conduta se aplica dentro de todos os espaços da comunidade do Estúdio Virtual, incluindo:
+* O jogo em si e todas as suas funcionalidades
+* Fóruns oficiais
+* Eventos presenciais ou online promovidos pela equipe do Estúdio Virtual
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at
-.
-All complaints will be reviewed and investigated promptly and fairly.
+Este código também se aplica quando um indivíduo está representando oficialmente a comunidade em espaços públicos.
 
-All community leaders are obligated to respect the privacy and security of the
-reporter of any incident.
+## Aplicação das Regras
 
-## Enforcement Guidelines
+Instâncias de comportamento abusivo, assediador ou de outra forma inaceitável podem ser relatadas aos líderes da comunidade responsáveis pela aplicação através do sistema de reportes pelo Github.
 
-Community leaders will follow these Community Impact Guidelines in determining
-the consequences for any action they deem in violation of this Code of Conduct:
+Todas as reclamações serão revisadas e investigadas prontamente e de forma justa.
 
-### 1. Correction
+Todos os líderes da comunidade são obrigados a respeitar a privacidade e segurança do relator de qualquer incidente.
 
-**Community Impact**: Use of inappropriate language or other behavior deemed
-unprofessional or unwelcome in the community.
+## Diretrizes de Aplicação
 
-**Consequence**: A private, written warning from community leaders, providing
-clarity around the nature of the violation and an explanation of why the
-behavior was inappropriate. A public apology may be requested.
+Os líderes da comunidade seguirão estas Diretrizes de Impacto da Comunidade ao determinar as consequências para qualquer ação que considerem em violação deste Código de Conduta:
 
-### 2. Warning
+### 1. Correção
 
-**Community Impact**: A violation through a single incident or series
-of actions.
+Impacto na Comunidade: Uso de linguagem inadequada ou outro comportamento considerado não profissional ou indesejado na comunidade.
 
-**Consequence**: A warning with consequences for continued behavior. No
-interaction with the people involved, including unsolicited interaction with
-those enforcing the Code of Conduct, for a specified period of time. This
-includes avoiding interactions in community spaces as well as external channels
-like social media. Violating these terms may lead to a temporary or
-permanent ban.
+Consequência: Um aviso privado por escrito dos líderes da comunidade, fornecendo clareza sobre a natureza da violação e uma explicação de por que o comportamento foi inadequado. Uma desculpa pública pode ser solicitada.
 
-### 3. Temporary Ban
+### 2. Advertência
 
-**Community Impact**: A serious violation of community standards, including
-sustained inappropriate behavior.
+Impacto na Comunidade: Uma violação através de um único incidente ou série de ações.
 
-**Consequence**: A temporary ban from any sort of interaction or public
-communication with the community for a specified period of time. No public or
-private interaction with the people involved, including unsolicited interaction
-with those enforcing the Code of Conduct, is allowed during this period.
-Violating these terms may lead to a permanent ban.
+Consequência: Uma advertência com consequências para comportamento continuado. Nenhuma interação com as pessoas envolvidas, incluindo interação não solicitada com aqueles que aplicam o Código de Conduta, por um período especificado de tempo. Isso inclui evitar interações em espaços da comunidade, bem como canais externos como mídias sociais. Violar estes termos pode levar a um banimento temporário ou permanente.
 
-### 4. Permanent Ban
+### 3. Banimento Permanente
 
-**Community Impact**: Demonstrating a pattern of violation of community
-standards, including sustained inappropriate behavior,  harassment of an
-individual, or aggression toward or disparagement of classes of individuals.
+Impacto na Comunidade: Demonstrar um padrão de violação dos padrões da comunidade, incluindo comportamento inadequado sustentado, assédio de um indivíduo, ou agressão ou desprezo em relação a classes de indivíduos. Inclui automaticamente uso de palavrões em elementos do jogo e qualquer forma de apologia à discriminação.
 
-**Consequence**: A permanent ban from any sort of public interaction within
-the community.
+Consequência: Um banimento permanente de qualquer tipo de interação pública dentro da comunidade e do jogo.
 
-## Attribution
+## Recursos e Contestações
+* Jogadores podem contestar punições.
+* Revisões são conduzidas por uma equipe independente
+* Decisões de banimento permanente por violações graves raramente são revertidas
+
+## Atribuição
 
 This Code of Conduct is adapted from the [Contributor Covenant][homepage],
 version 2.0, available at
