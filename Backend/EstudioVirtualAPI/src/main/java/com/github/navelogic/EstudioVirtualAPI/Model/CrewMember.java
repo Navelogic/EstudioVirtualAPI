@@ -45,6 +45,9 @@ public class CrewMember {
     private Integer productivity;
     private Integer stress;
 
+    @Column(nullable = true)
+    private String deathCause;
+
     private Boolean isDead = false;
     private Boolean isOnVacation = false;
     private Boolean isAvailable = true;
