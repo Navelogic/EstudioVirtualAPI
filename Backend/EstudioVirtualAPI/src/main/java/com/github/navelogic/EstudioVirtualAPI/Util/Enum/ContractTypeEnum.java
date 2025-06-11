@@ -1,10 +1,9 @@
 package com.github.navelogic.estudiovirtualapi.Util.Enum;
 
 public enum ContractTypeEnum {
-        EXCLUSIVE,
-        FREELANCE,
-        PRODUCTION_BASED,
-        ROYALTY_BASED,
+        PER_PROJECT,
+        FIXED_TERM,
+        MULTI_PROJECT,
         APPRENTICESHIP,
-        PER_PROJECT
+        PAY_OR_PLAY
 }
