@@ -26,7 +26,6 @@ public class Studio {
     private Long id;
 
     private String name;
-    private String description;
 
     @OneToOne
     @JoinColumn(name = "player_id", referencedColumnName = "id")
@@ -46,5 +45,4 @@ public class Studio {
 
     private Boolean isActive = true;
     private Boolean isAiControlled = false;
-
 }
