@@ -5,17 +5,12 @@ import com.github.navelogic.estudiovirtualapi.Model.Studio;
 import com.github.navelogic.estudiovirtualapi.Util.Enum.GenreEnum;
 import com.github.navelogic.estudiovirtualapi.Util.Enum.ProductionStatusEnum;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
-public class Production {
+@Inheritance(strategy = InheritanceType.JOINED)
+public abstract class Production {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,7 +31,7 @@ public class Production {
     private Integer audienceScore = 0;
     private Double hype = 0.0;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "studio_id")
     private Studio studio;
 

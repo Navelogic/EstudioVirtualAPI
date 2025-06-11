@@ -2,10 +2,7 @@ package com.github.navelogic.estudiovirtualapi.Model.Finance;
 
 import com.github.navelogic.estudiovirtualapi.Model.Studio;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -19,6 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Table(name = "studio_finances")
 public class StudioFinance {
 
     @Id

@@ -4,12 +4,15 @@ import com.github.navelogic.estudiovirtualapi.Util.Enum.DistributionModelEnum;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+
 
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@EqualsAndHashCode(callSuper = true)
 public class Movie extends Production {
 
     private Integer durationMinutes;

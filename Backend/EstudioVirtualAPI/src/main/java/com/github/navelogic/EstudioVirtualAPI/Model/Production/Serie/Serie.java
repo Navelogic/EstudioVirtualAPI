@@ -4,15 +4,18 @@ package com.github.navelogic.estudiovirtualapi.Model.Production.Serie;
 import com.github.navelogic.estudiovirtualapi.Model.Production.Production;
 import com.github.navelogic.estudiovirtualapi.Util.Enum.BroadcastTypeEnum;
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@EqualsAndHashCode(callSuper = true)
 public class Serie extends Production {
 
     @Enumerated(EnumType.STRING)

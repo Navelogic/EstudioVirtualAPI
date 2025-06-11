@@ -2,10 +2,7 @@ package com.github.navelogic.estudiovirtualapi.Model.Finance;
 
 import com.github.navelogic.estudiovirtualapi.Model.Production.Production;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -17,6 +14,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Table(name = "production_finances")
 public class ProductionFinance {
 
     @Id
@@ -27,7 +25,7 @@ public class ProductionFinance {
     @JoinColumn(name = "production_id")
     private Production production;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "studio_finance_id")
     private StudioFinance studioFinance;
 
