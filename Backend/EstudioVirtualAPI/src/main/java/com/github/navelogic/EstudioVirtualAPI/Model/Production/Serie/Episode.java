@@ -21,7 +21,7 @@ public class Episode {
     private Integer episodeNumber;
     private Integer durationMinutes;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "season_id")
     private Season season;
 }

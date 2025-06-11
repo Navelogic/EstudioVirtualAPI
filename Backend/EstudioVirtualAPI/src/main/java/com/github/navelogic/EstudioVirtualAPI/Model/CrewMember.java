@@ -6,7 +6,6 @@ import com.github.navelogic.estudiovirtualapi.Util.Enum.GenreEnum;
 import com.github.navelogic.estudiovirtualapi.Util.Enum.PersonalityTraitEnum;
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.lang.Contract;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

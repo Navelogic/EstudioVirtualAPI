@@ -26,7 +26,7 @@ public class Season {
     private BigDecimal budgetPerEpisode;
     private LocalDate releaseDate;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "serie_id")
     private Serie serie;
 
