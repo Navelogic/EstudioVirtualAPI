@@ -5,6 +5,7 @@ import com.github.navelogic.estudiovirtualapi.Model.Finance.StudioFinance;
 import com.github.navelogic.estudiovirtualapi.Model.Studio;
 import com.github.navelogic.estudiovirtualapi.Repository.StudioRepository;
 import com.github.navelogic.estudiovirtualapi.Util.AIService.NameGeneratorService;
+import com.github.navelogic.estudiovirtualapi.Util.NameAI.Service.StudioNameAIService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -19,11 +20,12 @@ public class StudioCreateAIService {
     private final StudioRepository studioRepository;
     private final NameGeneratorService nameGeneratorService;
     private final Random random = new Random();
+    private final StudioNameAIService studioNameAIService;
 
     @Transactional
     @Scheduled(fixedRate = 60000)
     public void scheduleCreateAiStudios() {
-        String studioName = nameGeneratorService.generateStudioName();
+        String studioName = studioNameAIService.generateStudioName();
         Studio studio = new Studio();
         StudioFinance finance = new StudioFinance();
         studio.setName(studioName);
