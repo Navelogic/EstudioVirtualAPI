@@ -37,7 +37,7 @@ out/
 /nbdist/
 /.nb-gradle/
 
-# Arquivos de Pacote (opcional, descomentar se necessário)
+
 *.jar
 *.war
 *.nar
