@@ -1,0 +1,50 @@
+# Padrões Gerais
+*.class
+*.log
+*.ctxt
+*.mtj.tmp/
+hs_err_pid*
+replay_pid*
+
+# Artefatos de Build
+target/
+build/
+dist/
+out/
+
+# Dependências e Configurações
+.gradle/
+.idea/
+.mvn/
+.settings/
+.project
+.classpath
+.factorypath
+.metadata
+.vscode/
+
+# IDEs e Editores
+*.iws
+*.iml
+*.ipr
+.apt_generated
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+
+# Arquivos de Pacote (opcional, descomentar se necessário)
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+application-dev.properties
+application-prod.properties
