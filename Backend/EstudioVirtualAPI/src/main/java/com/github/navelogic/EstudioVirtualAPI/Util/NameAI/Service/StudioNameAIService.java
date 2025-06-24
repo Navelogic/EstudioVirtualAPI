@@ -23,8 +23,8 @@ public class StudioNameAIService {
     }
 
     public String generateStudioName(){
-        List<StudioNameAI> prefixList = studioNameAIRepository.findAllByStudioNameTypeAI(StudioNameTypeAIEnum.PREFIX);
-        List<StudioNameAI> sufixList = studioNameAIRepository.findAllByStudioNameTypeAI(StudioNameTypeAIEnum.SUFFIX);
+        List<StudioNameAI> prefixList = studioNameAIRepository.findAllByStudioNameTypeAIEnum(StudioNameTypeAIEnum.PREFIX);
+        List<StudioNameAI> sufixList = studioNameAIRepository.findAllByStudioNameTypeAIEnum(StudioNameTypeAIEnum.SUFFIX);
 
         if (prefixList.isEmpty() || sufixList.isEmpty()) {
             return nameGeneratorService.generateStudioName();

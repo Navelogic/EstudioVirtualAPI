@@ -57,8 +57,6 @@ public class CrewMember {
     private LocalDate vacationStartDate;
     private LocalDate vacationEndDate;
 
-    private BigDecimal baseSalary;
-
     @OneToMany(mappedBy = "crewMember", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Contract> contracts = new HashSet<>();
 
