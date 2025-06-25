@@ -10,3 +10,9 @@
 <p align="center">
   <em>Inspirado pela API do <a href="https://www.themoviedb.org/">The Movie Database</a> e pelo jogo <a href="https://store.steampowered.com/app/2315430/The_Executive__Movie_Industry_Tycoon/">The Executive - Movie Industry Tycoon</a></em>
 </p>
+
+## 🎮 Sobre o Jogo
+Estúdio Virtual é um jogo de simulação e estratégia empresarial (tycoon) onde você assume o controle completo de um estúdio cinematográfico. Voltado especialmente para fãs de jogos de simulação e tycoon, o projeto oferece uma experiência profunda e realista de gerenciamento da indústria do entretenimento.
+
+## 🚀 Começando
+Para informações detalhadas sobre instalação, programação, configuração e como jogar, consulte nossa <a href="https://github.com/Navelogic/EstudioVirtualAPI/wiki">Wiki</a>.
