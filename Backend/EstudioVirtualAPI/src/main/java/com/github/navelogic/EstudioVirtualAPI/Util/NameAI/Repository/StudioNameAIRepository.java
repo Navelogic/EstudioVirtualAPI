@@ -9,5 +9,5 @@ import java.util.List;
 
 @Repository
 public interface StudioNameAIRepository extends JpaRepository<StudioNameAI, Long> {
-    List<StudioNameAI> findAllByStudioNameTypeAI(StudioNameTypeAIEnum StudioNameTypeAIEnum);
+    List<StudioNameAI> findAllByStudioNameTypeAIEnum(StudioNameTypeAIEnum StudioNameTypeAIEnum);
 }

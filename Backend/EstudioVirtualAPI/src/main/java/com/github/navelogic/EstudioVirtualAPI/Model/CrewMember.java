@@ -1,13 +1,12 @@
 package com.github.navelogic.estudiovirtualapi.Model;
 
+
 import com.github.navelogic.estudiovirtualapi.Util.Enum.CrewRoleEnum;
 import com.github.navelogic.estudiovirtualapi.Util.Enum.GenderEnum;
 import com.github.navelogic.estudiovirtualapi.Util.Enum.GenreEnum;
-import com.github.navelogic.estudiovirtualapi.Util.Enum.PersonalityTraitEnum;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
@@ -34,11 +33,11 @@ public class CrewMember {
     @Enumerated(EnumType.STRING)
     private GenreEnum specialty;
 
-    @ElementCollection(fetch = FetchType.LAZY)
-    @CollectionTable(name = "crew_member_traits", joinColumns = @JoinColumn(name = "crew_member_id"))
-    @Enumerated(EnumType.STRING)
+    /* Estava me dando muito trabalho para implementar personalidades. Farei no futuro.
+    @Column(name = "personality_traits", columnDefinition = "TEXT")
+    @Convert(converter = PersonalityTraitConverter.class)
     private Set<PersonalityTraitEnum> personalityTraits = new HashSet<>();
-
+     */
     private Integer popularity;
     private Integer artisticCreativity;
     private Integer experience;
@@ -57,9 +56,6 @@ public class CrewMember {
     private LocalDate vacationStartDate;
     private LocalDate vacationEndDate;
 
-    private BigDecimal baseSalary;
-
     @OneToMany(mappedBy = "crewMember", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Contract> contracts = new HashSet<>();
-
 }
