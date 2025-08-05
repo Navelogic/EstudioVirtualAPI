@@ -5,8 +5,8 @@ import com.github.navelogic.estudiovirtualapi.Engines.MoneyEngine.Model.Transact
 import com.github.navelogic.estudiovirtualapi.Engines.MoneyEngine.Repository.AccountRepository;
 import com.github.navelogic.estudiovirtualapi.Engines.MoneyEngine.Repository.TransactionRepository;
 import com.github.navelogic.estudiovirtualapi.Model.Production.Production;
-import com.github.navelogic.estudiovirtualapi.Util.Enum.TransactionCategoryEnum;
-import com.github.navelogic.estudiovirtualapi.Util.Enum.TransactionTypeEnum;
+import com.github.navelogic.estudiovirtualapi.Engines.MoneyTransferEngine.Enum.TransactionCategoryEnum;
+import com.github.navelogic.estudiovirtualapi.Engines.MoneyTransferEngine.Enum.TransactionTypeEnum;
 import com.github.navelogic.estudiovirtualapi.Util.Exception.InsufficientFundsException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.transaction.annotation.Transactional;
