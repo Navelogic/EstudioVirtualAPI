@@ -5,10 +5,7 @@ import com.github.navelogic.estudiovirtualapi.Util.Audit.Auditable;
 import com.github.navelogic.estudiovirtualapi.Util.Enum.TransactionCategoryEnum;
 import com.github.navelogic.estudiovirtualapi.Util.Enum.TransactionTypeEnum;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -26,10 +23,12 @@ import java.time.LocalDate;
  * @since 2025-08-05
  */
 @Entity
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@ToString(exclude = {"account", "production"})
 public class Transaction extends Auditable<String> {
 
     @Id

@@ -1,7 +1,5 @@
 package com.github.navelogic.estudiovirtualapi.Engines.MoneyEngine.Enum;
 
-import com.github.navelogic.estudiovirtualapi.Engines.MoneyEngine.Model.Account;
-
 /**
  * Defines the types of entities that can participate in the financial system,
  * either by owning an Account or by being the target of a transaction.

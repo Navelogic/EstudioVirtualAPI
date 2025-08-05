@@ -8,5 +8,6 @@ public enum TransactionCategoryEnum {
     STREAMING_REVENUE,
     MERCHANDISING_REVENUE,
     INVESTMENT,
-    LOAN
+    LOAN,
+    RECRUITMENT
 }
