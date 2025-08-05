@@ -2,8 +2,8 @@ package com.github.navelogic.estudiovirtualapi.Engines.MoneyEngine.Model;
 
 import com.github.navelogic.estudiovirtualapi.Model.Production.Production;
 import com.github.navelogic.estudiovirtualapi.Util.Audit.Auditable;
-import com.github.navelogic.estudiovirtualapi.Util.Enum.TransactionCategoryEnum;
-import com.github.navelogic.estudiovirtualapi.Util.Enum.TransactionTypeEnum;
+import com.github.navelogic.estudiovirtualapi.Engines.MoneyTransferEngine.Enum.TransactionCategoryEnum;
+import com.github.navelogic.estudiovirtualapi.Engines.MoneyTransferEngine.Enum.TransactionTypeEnum;
 import jakarta.persistence.*;
 import lombok.*;
 

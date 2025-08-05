@@ -1,7 +1,7 @@
 package com.github.navelogic.estudiovirtualapi.Engines.MoneyEngine.DTO;
 
-import com.github.navelogic.estudiovirtualapi.Util.Enum.TransactionCategoryEnum;
-import com.github.navelogic.estudiovirtualapi.Util.Enum.TransactionTypeEnum;
+import com.github.navelogic.estudiovirtualapi.Engines.MoneyTransferEngine.Enum.TransactionCategoryEnum;
+import com.github.navelogic.estudiovirtualapi.Engines.MoneyTransferEngine.Enum.TransactionTypeEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

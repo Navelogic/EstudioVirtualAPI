@@ -1,7 +1,7 @@
 package com.github.navelogic.estudiovirtualapi.Engines.MoneyEngine.DTO;
 
 import com.github.navelogic.estudiovirtualapi.Engines.MoneyEngine.Enum.FinancialEntityTypeEnum;
-import com.github.navelogic.estudiovirtualapi.Util.Enum.TransactionCategoryEnum;
+import com.github.navelogic.estudiovirtualapi.Engines.MoneyTransferEngine.Enum.TransactionCategoryEnum;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
