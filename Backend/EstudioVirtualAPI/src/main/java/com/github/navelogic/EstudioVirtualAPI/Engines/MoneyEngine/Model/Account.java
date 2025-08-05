@@ -1,6 +1,6 @@
 package com.github.navelogic.estudiovirtualapi.Engines.MoneyEngine.Model;
 
-import com.github.navelogic.estudiovirtualapi.Engines.MoneyEngine.Enum.AccountHolderTypeEnum;
+import com.github.navelogic.estudiovirtualapi.Engines.MoneyEngine.Enum.FinancialEntityTypeEnum;
 import com.github.navelogic.estudiovirtualapi.Model.CrewMember;
 import com.github.navelogic.estudiovirtualapi.Model.Player;
 import com.github.navelogic.estudiovirtualapi.Model.Studio;
@@ -50,11 +50,11 @@ public class Account extends Auditable<String> {
      * A discriminator column that specifies the type of the entity owning this account.
      * This simplifies business logic by allowing for quick identification of the owner's type
      * without needing to check multiple nullable foreign key fields.
-     * @see AccountHolderTypeEnum
+     * @see FinancialEntityTypeEnum
      */
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private AccountHolderTypeEnum holderType;
+    private FinancialEntityTypeEnum holderType;
 
     /**
      * A one-to-one, lazily-fetched relationship to a {@link Studio} owner.
