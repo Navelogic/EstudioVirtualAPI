@@ -1,10 +1,12 @@
 package com.github.navelogic.estudiovirtualapi.Util.NameAI.Service;
 
 import com.github.navelogic.estudiovirtualapi.Util.AIService.NameGeneratorService;
+import com.github.navelogic.estudiovirtualapi.Util.DTO.NameAI.CrewMemberNameAICreateDTO;
 import com.github.navelogic.estudiovirtualapi.Util.Enum.CrewMemberNameTypeAIEnum;
 import com.github.navelogic.estudiovirtualapi.Util.Enum.GenderEnum;
 import com.github.navelogic.estudiovirtualapi.Util.NameAI.Model.CrewMemberNameAI;
 import com.github.navelogic.estudiovirtualapi.Util.NameAI.Repository.CrewMemberNameAIRepository;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -19,8 +21,13 @@ public class CrewMemberNameAIService {
     private final NameGeneratorService nameGeneratorService;
     private static final Random random = new Random();
 
-    public CrewMemberNameAI createCrewMemberNameAI(CrewMemberNameAI crewMemberNameAI) {
-        return crewMemberNameAIRepository.save(crewMemberNameAI);
+    public CrewMemberNameAI createCrewMemberNameAI(CrewMemberNameAICreateDTO dto) {
+        var newName = new CrewMemberNameAI();
+        newName.setName(dto.getName());
+        newName.setCrewMemberNameTypeAIEnum(dto.getCrewMemberNameTypeAIEnum());
+        newName.setGenderEnum(dto.getGenderEnum());
+
+        return crewMemberNameAIRepository.save(newName);
     }
 
     public String generateCrewMemberName(String gender) {
