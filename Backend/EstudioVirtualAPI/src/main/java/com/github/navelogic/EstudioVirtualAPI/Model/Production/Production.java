@@ -1,7 +1,7 @@
 package com.github.navelogic.estudiovirtualapi.Model.Production;
 
-import com.github.navelogic.estudiovirtualapi.Model.Finance.ProductionFinance;
 import com.github.navelogic.estudiovirtualapi.Model.Studio;
+import com.github.navelogic.estudiovirtualapi.Util.Audit.Auditable;
 import com.github.navelogic.estudiovirtualapi.Util.Enum.GenreEnum;
 import com.github.navelogic.estudiovirtualapi.Util.Enum.ProductionStatusEnum;
 import jakarta.persistence.*;
@@ -10,7 +10,7 @@ import lombok.Data;
 @Entity
 @Data
 @Inheritance(strategy = InheritanceType.JOINED)
-public abstract class Production {
+public abstract class Production extends Auditable<String> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,7 +34,4 @@ public abstract class Production {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "studio_id")
     private Studio studio;
-
-    @OneToOne(mappedBy = "production", cascade = CascadeType.ALL, orphanRemoval = true)
-    private ProductionFinance finance;
 }

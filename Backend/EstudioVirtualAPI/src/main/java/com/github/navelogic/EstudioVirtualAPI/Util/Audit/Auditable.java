@@ -3,7 +3,8 @@ package com.github.navelogic.estudiovirtualapi.Util.Audit;
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
@@ -12,9 +13,10 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 
+@Getter
+@Setter
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
-@Data
 public abstract class Auditable<U> {
 
     @CreatedBy
@@ -22,14 +24,14 @@ public abstract class Auditable<U> {
     protected U createdBy;
 
     @CreatedDate
-    @Column(name = "created_date", updatable = false)
-    protected LocalDateTime createdDate;
+    @Column(name = "created_at", nullable = false, updatable = false)
+    protected LocalDateTime createdAt;
 
     @LastModifiedBy
-    @Column(name = "last_modified_by")
-    protected U lastModifiedBy;
+    @Column(name = "updated_by")
+    protected U updatedBy;
 
     @LastModifiedDate
-    @Column(name = "last_modified_date")
-    protected LocalDateTime lastModifiedDate;
+    @Column(name = "updated_at")
+    protected LocalDateTime updatedAt;
 }
