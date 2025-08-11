@@ -1,12 +1,17 @@
 package com.github.navelogic.estudiovirtualapi.Model;
 
 
+import com.github.navelogic.estudiovirtualapi.Engines.MoneyEngine.Model.Account;
+import com.github.navelogic.estudiovirtualapi.Model.Contract.Contract;
+import com.github.navelogic.estudiovirtualapi.Util.Audit.Auditable;
 import com.github.navelogic.estudiovirtualapi.Util.Enum.CrewRoleEnum;
 import com.github.navelogic.estudiovirtualapi.Util.Enum.GenderEnum;
 import com.github.navelogic.estudiovirtualapi.Util.Enum.GenreEnum;
+import com.github.navelogic.estudiovirtualapi.Util.Enum.PersonalityTraitEnum;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
@@ -16,7 +21,7 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CrewMember {
+public class CrewMember extends Auditable<String> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,16 +38,19 @@ public class CrewMember {
     @Enumerated(EnumType.STRING)
     private GenreEnum specialty;
 
-    /* Estava me dando muito trabalho para implementar personalidades. Farei no futuro.
+    @OneToOne(mappedBy = "crewMemberOwner", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Account account;
+
     @Column(name = "personality_traits", columnDefinition = "TEXT")
-    @Convert(converter = PersonalityTraitConverter.class)
     private Set<PersonalityTraitEnum> personalityTraits = new HashSet<>();
-     */
+
     private Integer popularity;
     private Integer artisticCreativity;
     private Integer experience;
     private Integer productivity;
     private Integer stress;
+
+    private BigDecimal baseSalary = BigDecimal.ZERO;
 
     @Column(nullable = true)
     private String deathCause;
